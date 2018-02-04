@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.ico">
+		<title>Rebelstack.io</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			html { }
+			h1 {
+				font-family:"Oswald";
+				color:rgba(255,255,255,0.9);
+
+			}
+			video { 
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 100%;
+				height: auto;
+				z-index: 2;
+				transform: translateX(-50%) translateY(-50%);
+				background-size: cover;
+				transition: 1s opacity;
+			}
+			body {
+				margin:0; padding:0; height:100%;
+				background-image:url('g/bg1.jpg'); background-size: cover;
+				overflow-x: hidden; overflow-y: hidden;
+			}
+			section { margin:0; padding:0; }
+			#home {  }
+			#logo {
+				position:absolute;
+				top: 50%;
+				left:50%;
+				transform: translateX(-50%) translateY(-50%);
+				margin-top:-100px;
+				z-index:3;
+			}
+			#logo > img { height:200px; }
+			#title {
+				position:absolute;
+				margin:0;
+				margin-top:100px;
+				top: 50%;
+				left: 50%;
+				width:12em;
+				transform: translateX(-50%) translateY(-50%);
+				z-index:3;
+				font-size:60px;
+				font-weight:400;
+				letter-spacing: 8px;
+				word-spacing: 4px;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<header />
+		<nav />
+		<section id="home">
+			<video playsinline="true" autoplay="true" muted="true" loop="true">
+				<source src="./v/rebelstackio_1024.webm" type="video/webm" media="screen and (max-device-width:1024px)">
+				<source src="./v/rebelstackio_768.webm" type="video/webm" media="screen and (max-device-width:768px)">
+				<source src="./v/rebelstackio_600.webm" type="video/webm" media="screen and (max-device-width:600px)">
+				<source src="./v/rebelstackio_500.webm" type="video/webm" media="screen and (max-device-width:500px)">
+				<source src="./v/rebelstackio_400.webm" type="video/webm" media="screen and (max-device-width:400px)">
+				<source src="./v/rebelstackio.webm" type="video/webm">
+				<source src="./v/rebelstackio.mp4" type="video/mp4">
+			</video>
+			<a id="logo" href="./"><img src="./g/logo.svg" alt="logo"></a>
+			<h1 id="title">Fullstack Powerhouse<br />Bleeding-edgesters</h1>
+		</section>
+		<footer />
+	</body>
+</html>
